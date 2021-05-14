@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんアプリ</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<!-- 最初の設定 -->
+<!-- title変更 -->
+<!-- styleshhet挿入 -->
+
+<body>
+
+
+    <!-- ここからHTML -->
+    <header>
+        <div class="header">
+            じゃんけんで勝って、魔王を倒そう！
+        </div>
+    </header>
+
+    <!-- 味方キャラの設定 -->
+    
+    <div id="character">
+        <div class="character_img"><img src="img/yuusya_game.png" alt=""></div>
+        <div class="character_name">主人公の名前を入力してください</div>
+        <div class="character_input">
+            なまえ：<textarea name="" id="character_name_textarea" cols="30" rows="10"></textarea>  <br>
+            レベル：<textarea name="" id="character_level_textarea" cols="30" rows="10"></textarea>  <br>
+            <button id="character_name_save">決定</button>
+        </div>
+    </div>
+
+<!-- 2つのボタンをセット -->
+    <footer>
+        <div class="footer">
+                <a href="fight.html"><button id="page_turn">戦いに挑む</button></a>
+                <a href="level.html"><button id="page_turn_2">レベルをあげる</button></a>        
+        </div>
+    </footer>
+
+
+    <!-- jsファイル挿入 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんアプリ</title>
+    <link rel="stylesheet" href="css/fight.css">
+</head>
+<!-- 最初の設定 -->
+<!-- title変更 -->
+<!-- styleshhet挿入 -->
+
+<body>
+
+    <!-- ここからHTML -->
+    <header>
+        <div class="header">
+            じゃんけんで勝って、魔王を倒そう！
+        </div>
+    </header>
+
+    <div class="title">
+        <textarea name="" id="title_character" cols="30" rows="10"></textarea>
+        <div class="title_enemy">vs <br>魔王</div> 
+    </div>
+
+    <!-- 魔王と勇者のイメージ図 -->
+    <div class="image">
+        <div class="enenmy">
+            <img src="img/fantasy_maou_devil.png" alt="">
+        </div>
+        <div class="character">
+            <img src="img/yuusya_game.png" alt="">
+        </div>
+    </div>
+
+    <div class="character_choice">
+        <div class="character_choice_title">出す手を選んでください</div>
+         <div class="character_choice_img">
+             <button id="character_choice_gu" value="1"><img src="img/janken_gu.png" alt=""></button>
+             <button id="character_choice_choki" value="2"><img src="img/janken_choki.png" alt=""></button>
+             <button id="character_choice_pa" value="3"><img src="img/janken_pa.png" alt=""></button>
+        </div>
+    </div>
+
+    <div class="result">
+        <div class="win">勝ち</div>
+        <div class="draw">引き分け</div>
+        <div class="lose">負け</div>
+    </div>
+
+    <div class="home">
+        <a href="home.html"><button id="page_turn">ホームに戻る</button></a>
+    </div>
+
+
+    <style>
+        .result{
+            display: none;
+        }
+    </style>
+
+    <footer>
+    </footer>
+
+
+    
+
+    <!-- ここからjquery -->
+    
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/fight.js"></script>
+</body>
+</html>
